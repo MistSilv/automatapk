@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* need PostCSS Language Support to remove warnings */
+
+body {
+  @apply bg-black text-white text-sm;
+  font-family: "Rubik";
+}
+h1 {
+  @apply text-2xl font-bold text-blue-500;
+}
+h2 {
+  @apply text-xl font-bold my-4;
+}
+h3 {
+  @apply text-lg font-bold my-4;
+}
+ul {
+  @apply my-10;
+}
+p {
+  @apply my-2;
+}
+
+/* header */
+header {
+  @apply bg-black;
+
+  nav {
+    @apply flex items-center gap-5 max-w-screen-lg px-12 py-4 mx-auto;
+  }
+  h1 {
+    @apply mr-auto;
+  }
+}
+
+/* form elements */
+form {
+  @apply max-w-screen-sm;
+}
+input, select, textarea {
+  @apply block w-full mt-2 mb-4 p-2;
+}
+
+/* custom classes */
+.container {
+  @apply max-w-screen-lg mx-auto px-12 py-8;
+}
+.card {
+  @apply bg-white rounded border border-gray-200 px-3 py-3 my-2 flex justify-between items-center text-black;
+}
+.highlight {
+  @apply border-l-4 border-l-blue-800;
+}
+.btn {
+  @apply rounded px-3 py-2 bg-gray-400 hover:bg-blue-800 hover:text-white;
+}
